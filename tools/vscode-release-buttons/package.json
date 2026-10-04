@@ -1,0 +1,53 @@
+{
+  "name": "kg-release-buttons",
+  "displayName": "KG Release Buttons",
+  "publisher": "marabuba-local",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "kgRelease.build",
+        "title": "КГ: Собрать"
+      },
+      {
+        "command": "kgRelease.vercel",
+        "title": "КГ: Опубликовать в Vercel"
+      },
+      {
+        "command": "kgRelease.itch",
+        "title": "КГ: Опубликовать на itch.io"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "kgRelease",
+          "title": "Сборка игры",
+          "icon": "media/release.svg"
+        }
+      ]
+    },
+    "views": {
+      "kgRelease": [
+        {
+          "id": "kgRelease.panel",
+          "name": "Сборка и публикация",
+          "when": "workspaceFolderCount > 0"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "kgRelease.panel",
+        "contents": "[Собрать](command:kgRelease.build)\n\n[Опубликовать в Vercel](command:kgRelease.vercel)\n\n[Опубликовать на itch.io](command:kgRelease.itch)"
+      }
+    ]
+  }
+}

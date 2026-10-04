@@ -1,0 +1,69 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "КГ: Собрать",
+      "type": "process",
+      "command": "/usr/bin/python3",
+      "args": [
+        "${workspaceFolder}/tools/release_web.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "never",
+        "panel": "shared",
+        "clear": true
+      },
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    },
+    {
+      "label": "КГ: Опубликовать в Vercel",
+      "type": "process",
+      "command": "/usr/bin/python3",
+      "args": [
+        "${workspaceFolder}/tools/release_web.py",
+        "--publish",
+        "vercel"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "never",
+        "panel": "shared",
+        "clear": true
+      },
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    },
+    {
+      "label": "КГ: Опубликовать на itch.io",
+      "type": "process",
+      "command": "/usr/bin/python3",
+      "args": [
+        "${workspaceFolder}/tools/release_web.py",
+        "--publish",
+        "itch"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "never",
+        "panel": "shared",
+        "clear": true
+      },
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    }
+  ]
+}
