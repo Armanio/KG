@@ -184,7 +184,9 @@ init python:
     ## "**.psd" берёт все файлы psd из любого места проекта.
 
     ## Классифицируйте файлы как None, чтобы исключить их из дистрибутивов.
-
+    
+    build.classify("KG-1.0-web/**", None)
+    
     build.classify('**~', None)
     build.classify('**.bak', None)
     build.classify('**/.**', None)
