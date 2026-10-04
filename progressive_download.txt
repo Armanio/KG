@@ -1,0 +1,15 @@
+# RenPyWeb progressive download rules - first match applies
+# '+' = progressive download, '-' = keep in game.zip (default)
+# See https://www.renpy.org/doc/html/build.html#classifying-and-ignoring-files for matching
+#
+# +/- type path
+- image game/gui/**
+- image game/images/logo_frames/**
+- image game/images/splash_frames/**
+- image game/images/cover_intro/**
+# First prologue frames are ready before the game starts.
+- image game/images/bg_special/prolog_1.webp
+- image game/images/bg_special/prolog_2.webp
++ image game/**
++ music game/audio/**
++ voice game/voice/**

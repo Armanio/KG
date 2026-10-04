@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "wrongchoice.marabuba.com"
+        }
+      ],
+      "destination": "/KG-1.0-web/index.html"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "wrongchoice.marabuba.com"
+        }
+      ],
+      "destination": "/KG-1.0-web/:path*"
+    }
+  ]
+}
