@@ -32,3 +32,6 @@ traceback.txt
 renpy_warp_*
 game/_mcp/*
 .vercel
+
+# Generated web release packages
+/release/

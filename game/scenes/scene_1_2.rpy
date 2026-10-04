@@ -93,7 +93,7 @@ label scene_1_2:
     hide virt
 
     show eveina intrigued at eveina_left, sprite_warm
-    ev_thought "Вот теперь — готово." (show_side="left", show_kind="thought")
+    ev_thought "Вот 2теперь — готово." (show_side="left", show_kind="thought")
     hide eveina
 
     n "Эвейна уже собиралась спросить о рекомендации, когда третий участник собеседования счёл паузу своим выходом." (show_side="none", show_kind="speech")

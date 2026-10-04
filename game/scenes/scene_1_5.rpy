@@ -357,7 +357,7 @@ label scene_1_5:
     n "Раскладывая вещи, скользнула взглядом по комнате. Стандартная мебель, мягкий свет, большое окно." (show_side="none", show_kind="speech")
     n "На подоконнике у соседней кровати стоял небольшой горшок с чем-то, что напоминало мох — только темнее, плотнее, с едва заметным бежевым отливом на отростках." (show_side="none", show_kind="speech")
 
-    show eveina eyebrow at eveina_left, sprite_warm
+    show eveina wrinkled at eveina_left, sprite_warm
     ev "Это... что за уродец?" (show_side="left", show_kind="speech")
     hide eveina
 

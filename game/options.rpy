@@ -186,6 +186,11 @@ init python:
     ## Классифицируйте файлы как None, чтобы исключить их из дистрибутивов.
     
     build.classify("KG-1.0-web/**", None)
+    build.classify("website/**", None)
+    build.classify("web-release-template/**", None)
+    build.classify("tools/**", None)
+    build.classify("docs/**", None)
+    build.classify("release/**", None)
     
     build.classify('**~', None)
     build.classify('**.bak', None)

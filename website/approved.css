@@ -1,0 +1,105 @@
+
+:root{--bg:#101716;--gold:#d8b680}body{background:var(--bg)}header{max-width:1600px;padding:0 4%;height:84px;border-bottom:1px solid #d8b68018}.brand{font-size:20px}.brand small{font-size:8px;letter-spacing:1.4px}header nav{font-size:12px}
+.hero-final{position:relative;isolation:isolate;max-width:1920px;margin:auto;min-height:680px;height:min(760px,calc(100svh - 84px));display:grid;grid-template-columns:33% 67%;grid-template-rows:1fr 1.25fr;overflow:hidden;padding:0 4%}.title-block{grid-column:1;grid-row:1;align-self:end;z-index:2;padding-top:65px}.title-block .eyebrow{font-size:9px;letter-spacing:1.6px;white-space:nowrap}.title-block h1{font-size:clamp(23px,2.4vw,40px);letter-spacing:0;margin:25px 0 10px;text-transform:none}.title-block h1 strong{font-size:clamp(72px,7.2vw,118px);margin-top:2px;text-transform:uppercase;color:#e9d4ad}.scene{position:absolute;z-index:-1;right:0;top:0;bottom:0;width:78%;}.scene img{width:100%;height:100%;object-fit:cover;object-position:60% center}.scene:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#101716 0%,#101716f5 5%,#101716c7 13%,#10171670 22%,#10171618 32%,transparent 42%),linear-gradient(0deg,#101716,transparent 17%)}.play-block{grid-column:1;grid-row:2;z-index:2;padding-bottom:55px}.hook{font-size:clamp(20px,1.8vw,28px);line-height:1.45;font-weight:600;margin:19px 0}.lead{font-size:13px;line-height:1.9;color:#b9c1ba}.actions{gap:25px;margin-top:28px}.primary{min-width:170px;border-radius:3px;background:linear-gradient(120deg,#e7c892,#cfa872);box-shadow:0 6px 30px #0003}.meta{font-size:9px!important;white-space:nowrap}.release{max-width:none;padding:22px 4%;background:#101716}.card img{border-radius:0;aspect-ratio:auto;height:auto;display:block}.cards{gap:14px}.characters{background:#111d1d}.section{max-width:1440px}.finish{background:radial-gradient(ellipse at bottom,#344139,#101716 70%)}
+@media(min-width:1700px){.scene img{object-fit:contain;object-position:right center}.scene{width:80%}}
+@media(max-width:1000px){.hero-final{grid-template-columns:37% 63%}.scene{width:80%}.title-block .eyebrow{font-size:8px}.title-block h1{font-size:25px}.title-block h1 strong{font-size:78px}.hook{font-size:22px}.lead{font-size:12px}}
+@media(max-width:760px){header{height:65px;padding:0 22px}.brand{font-size:18px}.brand small{font-size:7px}header nav{font-size:10px;gap:16px}.hero-final{height:auto;min-height:0;display:flex;flex-direction:column;padding:0;overflow:visible}.title-block{align-self:stretch;text-align:center;padding:34px 16px 23px;order:0}.title-block .eyebrow{font-size:8px;letter-spacing:1.4px}.title-block h1{font-size:29px;margin:16px 0 0}.title-block h1 strong{font-size:85px;margin:0}.scene{position:relative;inset:auto;width:100%;z-index:0;order:1}.scene img{display:block;width:100%;height:auto;object-fit:contain}.scene:after{background:linear-gradient(0deg,#101716,transparent 18%);pointer-events:none}.play-block{order:2;text-align:center;padding:15px 22px 30px}.play-block .hook,.play-block .lead{display:none}.play-block .actions{margin:0;justify-content:center}.primary{min-width:190px}.play-block .meta{font-size:9px!important;margin:19px 0 0}.release{padding:18px 22px;font-size:9px;gap:10px}.cards{gap:12px}.section{padding:52px 22px}.section h2{font-size:29px}.section-head p{font-size:13px}}
+/* Revised character presentation and story promises. */
+.title-block h1 strong.title-choice{position:relative;display:block;width:100%;max-width:410px;aspect-ratio:610/104;line-height:1;margin:15px 0 25px;overflow:visible}
+.title-choice>span{position:absolute;inset:0;overflow:hidden;display:block}
+.title-choice img{position:absolute;width:154.2623%;max-width:none;height:auto;left:-26.5574%;top:-1023.0769%}
+.word-layer{animation:word-jitter 5s .8s infinite;will-change:transform}
+.glitch-layer{opacity:0;pointer-events:none}
+.glitch-a{animation:slice-a 5s .95s infinite}.glitch-b{animation:slice-b 5s 1.03s infinite}
+@keyframes word-jitter{0%{opacity:0;transform:translateX(0)}2.4%{opacity:1}4%{transform:translateX(0)}4.01%,5.2%{transform:translateX(-2px)}5.21%,6.4%{transform:translateX(2px)}6.41%,100%{opacity:1;transform:translateX(0)}}
+@keyframes slice-a{0%,1.39%{opacity:.8;transform:translateX(7px)}1.4%,2.59%{opacity:.8;transform:translateX(-7px)}2.6%,100%{opacity:0;transform:translateX(0)}}
+@keyframes slice-b{0%,1.39%{opacity:.8;transform:translateX(-5px)}1.4%,2.59%{opacity:.8;transform:translateX(5px)}2.6%,100%{opacity:0;transform:translateX(0)}}
+.lead{max-width:310px}.hook{max-width:350px}
+.characters #characters{max-width:none;padding:75px 0 0}.characters .section-head{max-width:1440px;margin:auto;padding:0 7% 20px}.cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:0;width:100%}.card{position:relative;overflow:hidden;outline-offset:-4px}.card img{width:100%;height:auto;border-radius:0;filter:none}.card:after{content:"";position:absolute;inset:0;pointer-events:none;background:transparent;opacity:0}.card.is-active img,.card:hover img,.card:focus-visible img{filter:none}.card.is-active:after,.card:hover:after,.card:focus-visible:after{opacity:0}.card:focus-visible{outline:2px solid var(--gold)}
+.expectations{padding-top:95px;padding-bottom:95px}.expectations ol{display:grid;grid-template-columns:1fr 1fr;gap:0 70px;padding:0;list-style:none;margin:40px 0 0}.expectations li{display:flex;gap:22px;border-top:1px solid #d8b68030;padding:26px 0}.expect-number{font-size:12px;color:var(--gold);padding-top:5px}.expectations li p{font-size:17px;line-height:1.85;margin:0;color:#d2d8d1}
+#frames{max-width:none;padding-left:0;padding-right:0}#frames .section-head{max-width:1440px;margin:auto;padding:0 7%}.shots{max-width:none;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:24px 0 0}.shot{border:0;border-radius:0}.shot span{display:none}#lightbox{max-width:760px}
+@media(max-width:760px){.title-block h1 strong.title-choice{width:280px;max-width:90%;margin:16px auto 0}.play-block .hook,.play-block .lead{display:block;max-width:430px;margin-left:auto;margin-right:auto}.play-block .hook{font-size:22px;margin-top:12px}.play-block .lead{font-size:13px;margin-bottom:24px}.characters #characters{padding-top:50px}.characters .section-head{padding:0 22px 18px}.cards{grid-template-columns:1fr;gap:8px}.card img{filter:none;transition:none}.card:after{display:none}.expectations{padding:55px 22px}.expectations ol{grid-template-columns:1fr;gap:0;margin-top:25px}.expectations li{gap:16px;padding:23px 0}.expectations li p{font-size:16px}#frames .section-head{padding:0 22px}.shots{grid-template-columns:1fr;gap:10px}.shots .shot:last-child{grid-column:auto;width:100%}}
+@media(prefers-reduced-motion:reduce){.title-choice>span{animation:none}.word-layer{opacity:1}.glitch-layer{display:none}.card img{filter:none}.card:after{display:none}}
+
+/* Both lines share one width; compensate for transparent margins in game artwork. */
+.title-block h1{display:inline-grid;grid-template-columns:max-content;text-transform:uppercase}
+.title-first{display:block;white-space:nowrap}
+.title-block h1 strong.title-choice{width:100%;max-width:none;aspect-ratio:517/104;margin:15px 0 25px}
+.title-choice img{width:182.0116%;left:-40.0387%;top:-1023.0769%}
+@media(max-width:760px){.title-block h1{font-size:clamp(20px,6.8vw,29px)}.title-block h1 strong.title-choice{width:100%;max-width:none;margin:16px 0 0}}
+
+/* Reveal only through opacity; no image filters or movement. */
+@media(min-width:761px) and (hover:hover) and (prefers-reduced-motion:no-preference){
+ .card:after{background:#000;opacity:.22;transition:opacity .4s ease}
+ .card.is-active:after,.card:hover:after,.card:focus-visible:after{opacity:0}
+}
+
+/* Full compositions, with independent mobile artwork. */
+.hero-final{max-width:none;height:auto;min-height:0;padding:40px 0 40px 4%;grid-template-columns:minmax(300px,25%) minmax(0,1fr);grid-template-rows:auto auto;column-gap:3%;align-content:center;overflow:hidden}
+.title-block{padding-top:0;align-self:end}.title-block h1{font-size:clamp(23px,2.1vw,40px)}
+.play-block{padding-bottom:0;align-self:start}.play-block .actions{flex-wrap:wrap;gap:15px 24px}.title-block .eyebrow{white-space:normal}
+.scene{position:relative;inset:auto;z-index:0;width:100%;grid-column:2;grid-row:1 / 3;align-self:center}
+.scene:after{display:none}.banner-stage{position:relative;aspect-ratio:2 / 1;overflow:hidden;touch-action:pan-y}
+.banner-stage:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,var(--bg),transparent 3%);z-index:2}
+.banner-slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;pointer-events:none}.banner-slide.is-current{opacity:1}
+.scene .banner-slide img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.banner-controls{display:flex;justify-content:center;align-items:center;gap:16px;padding:5px 20px}.banner-dots{display:flex;gap:2px}.banner-controls button{display:grid;place-items:center;width:36px;height:36px;background:transparent;border:0;color:var(--gold);padding:0}.banner-dots span{width:6px;height:6px;border-radius:50%;background:#d8b68055}.banner-dots [aria-pressed="true"] span{background:var(--gold)}.banner-pause{font-size:17px}.banner-controls button:focus-visible{outline-offset:-2px}
+@media(max-width:1100px){
+ .hero-final{display:flex;flex-direction:column;padding:0;height:auto;min-height:0}
+ .title-block{align-self:stretch;order:0;text-align:center;padding:32px 16px 22px}.title-block h1{font-size:clamp(20px,6.8vw,32px);margin:16px 0 0}.title-block h1 strong.title-choice{margin:16px 0 0}
+ .scene{order:1;width:100%}.banner-stage{aspect-ratio:2998 / 2000}.banner-stage:after{background:linear-gradient(0deg,var(--bg),transparent 5%)}
+ .play-block{order:2;text-align:center;padding:0 22px 32px}.play-block .hook,.play-block .lead{display:block;max-width:430px;margin-left:auto;margin-right:auto}.play-block .actions{justify-content:center;margin-top:24px}.banner-controls{padding-bottom:0}
+}
+@media(prefers-reduced-motion:reduce){.banner-slide{transition:none}}
+.banner-controls button[hidden]{display:none}
+
+/* Wide desktop banner, with the copy laid over its left edge. */
+@media(min-width:1101px){
+ .hero-final{width:90%;margin:30px auto 0;padding:0;grid-template-columns: minmax(310px,34%) 1fr;grid-template-rows:1fr 1fr;column-gap:0;align-content:normal}
+ .scene{grid-column:1 / -1;grid-row:1 / 3;width:100%;align-self:center}
+ .title-block{grid-column:1;grid-row:1;padding:24px 0 0 3vw;align-self:end}
+ .play-block{grid-column:1;grid-row:2;padding:0 0 65px 3vw;align-self:start}
+ .title-block h1{font-size:clamp(23px,2.1vw,40px)}
+ .banner-stage:after{background:linear-gradient(90deg,#101716f5 0%,#101716de 30%,#10171685 65%,#10171600 100%);right:auto;width:var(--title-fade-end,34%)}
+ .play-block .hook,.play-block .lead{text-shadow:0 2px 8px #000}
+}
+@media(max-width:1100px){.banner-controls{display:none}}
+@media(max-width:760px){
+ .characters #characters,#frames{padding:52px 22px}
+ .characters .section-head,#frames .section-head{padding:0 0 18px}
+ .cards{gap:22px}.shots{gap:22px}
+}
+/* Glass uses light, borders and transparency, without backdrop filters. */
+.primary,.glass-secondary{color:#f4ead8;border:1px solid #d8b680b3;border-radius:9px;background:linear-gradient(160deg,#ffffff16,#ffffff03 45%),#101c1bc9;box-shadow:inset 0 1px 0 #fff2,inset 0 -1px 0 #0005,0 5px 16px #0002;transition:background .2s,border-color .2s,transform .15s}
+.primary:hover,.glass-secondary:hover{background:linear-gradient(160deg,#ffffff22,#ffffff08 45%),#26332ee8;border-color:#eed3a1}
+.primary:active,.glass-secondary:active{transform:translateY(1px)}
+.glass-secondary{display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:17px 25px;min-height:54px;border-color:#8caaa77a}
+.launch-panel{max-width:700px;margin:0 auto 32px}.launch-panel .save-notice{font-size:14px;line-height:1.9}.launch-panel #install-app{display:flex;margin:24px auto 12px}.launch-panel #install-app[hidden]{display:none}
+#ios-install{text-align:left;margin:30px 0}#ios-install ol{padding-left:23px;line-height:1.9;font-size:14px;color:var(--muted)}#ios-install img{width:100%;height:auto;border-radius:10px}#install-hint:empty{display:none}#launch-preview{font-size:12px;color:var(--muted)}
+
+/* Release information and mobile typography. */
+.release{flex-wrap:nowrap;align-items:center}
+.release span{white-space:nowrap}
+@media(max-width:760px){
+ header{height:auto;min-height:94px;padding:18px 22px}
+ header nav{display:none}
+ header .brand{font-size:30px}
+ header .brand small{font-size:10px;margin-top:5px}
+ .release{flex-direction:column;align-items:flex-start;gap:12px;padding:22px;font-size:14px;line-height:1.6}
+ .release span{white-space:normal}
+ #story p{font-size:20px}
+ .expectations li p{font-size:20px}
+ .play-block .lead{font-size:14px}
+}
+
+/* Installation guide copied from the current game build. */
+#ios-install { text-align: left; margin: 24px 0; }
+#ios-install h2 { font-size: 22px; color: #f1cf91; }
+.kg-step { margin: 22px 0; }
+.kg-step p { font-size: 16px; line-height: 1.5; margin: 0 0 10px; }
+.kg-shot { position: relative; overflow: hidden; border-radius: 12px; border: 1px solid #d5ac7340; }
+.kg-shot img { display: block; width: 100%; height: auto; }
+.kg-mark { position: absolute; border: 3px solid #ffcf63; border-radius: 12px; box-sizing: border-box; box-shadow: 0 0 0 2px #191a17, 0 0 12px #ffcf6370; pointer-events: none; }
+#ios-install .kg-shot img{border-radius:0}
+
+.expectations .expect-accent{color:var(--gold)}
